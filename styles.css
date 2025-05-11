@@ -13,9 +13,10 @@ body {
 }
 
 .container {
-    width: 1120px;
+    width: 100%;
+    max-width: 1120px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 h1 {
@@ -80,13 +81,14 @@ input:focus {
 }
 
 .certificate-bg {
-    width: 1120px;
-    height: 800px;
-    margin: 30px auto 20px auto;
+    width: 100%;
+    max-width: 1120px;
+    aspect-ratio: 1120/800;
     position: relative;
     box-shadow: 0 10px 30px rgba(255, 140, 0, 0.15);
     display: block;
     overflow: hidden;
+    background: none;
 }
 
 .bg-img {
@@ -98,6 +100,7 @@ input:focus {
     z-index: 1;
     pointer-events: none;
     user-select: none;
+    object-fit: cover;
 }
 
 .cert-words {
@@ -116,10 +119,10 @@ input:focus {
 
 .cert-mother {
     position: absolute;
-    top: 320px;
-    left: 120px;
-    width: 900px;
-    font-size: 36px;
+    top: 40%;
+    left: 12%;
+    width: 76%;
+    font-size: 3vw;
     color: #222;
     font-weight: bold;
     text-align: left;
@@ -127,10 +130,10 @@ input:focus {
 
 .cert-main {
     position: absolute;
-    top: 390px;
-    left: 120px;
-    width: 900px;
-    font-size: 32px;
+    top: 48%;
+    left: 12%;
+    width: 76%;
+    font-size: 2.5vw;
     color: #222;
     line-height: 1.7;
     text-align: left;
@@ -138,13 +141,13 @@ input:focus {
 
 .cert-highlight {
     position: absolute;
-    top: 510px;
+    top: 62%;
     left: 0;
     width: 100%;
     text-align: center;
     font-family: 'Ma Shan Zheng', 'STXingkai', 'KaiTi', cursive, sans-serif;
     color: #d32f2f;
-    font-size: 100px;
+    font-size: 7vw;
     font-weight: bold;
     letter-spacing: 0.2em;
     text-shadow: 0 2px 0 #fff200, 0 4px 10px #ff9800;
@@ -152,25 +155,25 @@ input:focus {
 
 .cert-footer {
     position: absolute;
-    left: 120px;
-    bottom: 120px;
-    width: 880px;
+    left: 12%;
+    bottom: 8%;
+    width: 76%;
     display: flex;
     justify-content: space-between;
-    font-size: 32px;
+    font-size: 2.5vw;
     color: #222;
     font-weight: bold;
 }
 
 .cert-date {
     color: #d32f2f;
-    font-size: 32px;
+    font-size: 2.5vw;
     font-weight: bold;
 }
 
 .cert-child {
     color: #222;
-    font-size: 32px;
+    font-size: 2.5vw;
     font-weight: bold;
 }
 
