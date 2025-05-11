@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", 'Ma Shan Zheng', sans-serif;
+    background: linear-gradient(135deg, #fffbe6 0%, #ffe066 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff6b6b;
+    box-shadow: 0 0 5px rgba(255, 107, 107, 0.3);
+}
+
+.btn {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(255, 107, 107, 0.2);
+}
+
+.btn:hover {
+    background: #ff5252;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(255, 107, 107, 0.3);
+}
+
+.certificate-bg {
+    width: 1120px;
+    height: 800px;
+    margin: 30px auto 20px auto;
+    position: relative;
+    background: url('bg.jpg') no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 10px 30px rgba(255, 140, 0, 0.15);
+    display: none;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cert-words {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+.cert-mother, .cert-main, .cert-footer, .cert-child, .cert-date {
+    font-family: 'Microsoft YaHei', 'SimHei', 'Arial', sans-serif !important;
+}
+
+.cert-mother {
+    position: absolute;
+    top: 320px;
+    left: 120px;
+    width: 900px;
+    font-size: 36px;
+    color: #222;
+    font-weight: bold;
+    text-align: left;
+}
+
+.cert-main {
+    position: absolute;
+    top: 390px;
+    left: 120px;
+    width: 900px;
+    font-size: 32px;
+    color: #222;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.cert-highlight {
+    position: absolute;
+    top: 510px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Ma Shan Zheng', 'STXingkai', 'KaiTi', cursive, sans-serif;
+    color: #d32f2f;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-shadow: 0 2px 0 #fff200, 0 4px 10px #ff9800;
+}
+
+.cert-footer {
+    position: absolute;
+    left: 120px;
+    bottom: 120px;
+    width: 880px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    color: #222;
+    font-weight: bold;
+}
+
+.cert-date {
+    color: #d32f2f;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.cert-child {
+    color: #222;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.download-btn {
+    background: #4CAF50;
+    box-shadow: 0 4px 6px rgba(76, 175, 80, 0.2);
+}
+
+.download-btn:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(76, 175, 80, 0.3);
+} 

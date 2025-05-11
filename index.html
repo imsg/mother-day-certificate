@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>母亲节奖状生成器</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>母亲节奖状生成器</h1>
+        <div class="form-container">
+            <div class="input-group">
+                <label for="motherName">母亲姓名：</label>
+                <input type="text" id="motherName" placeholder="请输入母亲姓名">
+            </div>
+            <div class="input-group">
+                <label for="childName">子女姓名：</label>
+                <input type="text" id="childName" placeholder="请输入子女姓名">
+            </div>
+            <button id="generateBtn" class="btn">生成奖状</button>
+        </div>
+
+        <div id="certificate" class="certificate-bg" style="display: block;">
+            <div class="cert-words">
+                <div class="cert-mother">亲爱的妈妈：<span id="motherNameDisplay">张妈妈</span></div>
+                <div class="cert-main">母亲节快乐！感谢您一直以来对家庭的辛苦付出，<br>愿母亲大人永远健康、平安幸福快乐，在我心里您永远都是</div>
+                <div class="cert-highlight">最美母亲</div>
+                <div class="cert-footer">
+                    <span class="cert-child">爱您的子女：<span id="childNameDisplay">小明</span></span>
+                    <span class="cert-date">2025年5月11日</span>
+                </div>
+            </div>
+        </div>
+
+        <button id="downloadBtn" class="btn download-btn" style="display: block;">下载奖状</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
