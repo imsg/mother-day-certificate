@@ -5,14 +5,15 @@
 }
 
 body {
-    font-family: "Microsoft YaHei", 'Ma Shan Zheng', sans-serif;
-    background: linear-gradient(135deg, #fffbe6 0%, #ffe066 100%);
-    min-height: 100vh;
+    font-family: "Microsoft YaHei", 'Ma+Shan+Zheng', sans-serif;
+    background: #fffbe6;
+    min-width: 1120px;
+    overflow-x: auto;
     padding: 20px;
 }
 
 .container {
-    max-width: 800px;
+    width: 1120px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -86,8 +87,6 @@ input:focus {
     box-shadow: 0 10px 30px rgba(255, 140, 0, 0.15);
     display: block;
     overflow: hidden;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .bg-img {
